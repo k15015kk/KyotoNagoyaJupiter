@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>kyoto.nagoya</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <main>
+      <div class="area-button">
+        <div class="box-tages">
+          <a onclick="sound()"><button class="btn-tages">GutenTag</button>
+            <audio id="sound-file" preload="auto">
+              <source src="audio/tagesschau.mp3" type="audio/mp3">
+            </audio></a>
+        </div>
+      </div>
+      <div class="area-sns">
+        <div class="box-sns">
+          <ul class="unordered-sns">
+            <div class="listbox">
+              <li class="list-sns" id="list-twitter">
+                <a href="https://twitter.com/?lang=ja">
+                  <div class="button-sns">
+                    <img class="img-twitter" src="img/Twitter_Logo_Blue.png">
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="listbox">
+              <li class="list-sns" id="list-facebook">
+                <a href="https://www.facebook.com/profile.php?id=100009544543488">
+                  <div class="button-sns">
+                    <img class="img-facebook" src="img/flogo_RGB_HEX-72.png">
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="listbox">
+              <li class="list-sns" id="list-tumblr">
+                <a href="https://kyotonagoya.tumblr.com/">
+                  <div class="button-sns">
+                    <img class="img-tumblr" src="img/Tumblr_Logos_2018.03.06_t Icon Blue.png">
+                  </div>
+                </a>
+              </li>
+            </div>
+            <div class="listbox">
+              <li class="list-sns" id="list-instagram">
+                <a href="https://www.instagram.com/kyoto.nagoya/?hl=ja">
+                  <div class="button-sns">
+                    <img class="img-instagram" src="img/glyph-logo_May2016.png">
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!--script-->
+  <script>
+    function sound() {
+      var id = 'sound-file';
+
+      if (typeof (document.getElementById(id).currentTime) != 'undefined') {
+        document.getElementById(id).currentTime = 0;
+      }
+
+      document.getElementById(id).play();
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
