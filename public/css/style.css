@@ -32,7 +32,7 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 72px;
-    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
 
@@ -43,7 +43,7 @@ body {
 .area-sns {
     position: relative;
     display: block;
-    height: 180px;
+    height: auto;
 }
 
 .box-sns {
@@ -57,7 +57,8 @@ body {
     padding: 0;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 li {
@@ -67,6 +68,8 @@ li {
 .listbox {
     position: relative;
     display: block;
+    margin-left: 16px;
+    margin-right: 16px;
     width: 240px;
     height: 180px;
 }
@@ -123,3 +126,8 @@ li {
     margin: auto;
 }
 
+@media screen and (max-width:960px){
+    .btn-tages {
+        width: 100%;
+    }
+}
